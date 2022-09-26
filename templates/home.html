@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Complete Responsive Food / Resturant Website Design Tutorial</title>
+    <title>Team Apollo</title>
 
-   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
-    
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/main.css') }}"
+    />
   </head>
   <body>
-  
-
     <header class="header">
       <a href="#" class="logo"> <i class="fas fa-utensils"></i> Fit Foodie </a>
 
@@ -35,89 +34,114 @@
       </div>
     </header>
 
-   
-
     <section class="home" id="home">
       <div class="content">
-        <span>welcome fit foodies</span>
-        <h3>different spices for the different tastes 😋</h3>
+        <span>welcome Fit Foodies </span>
+        <h3>EAT BETTER, NOT LESS!! 😋</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde
-          dolores temporibus hic quam debitis tenetur harum nemo.
+          "We are what we eat!" What we eat decides everything. So start your
+          fitness journey with us today!
         </p>
-        <a href="#" class="btn">order now</a>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <input type="file" class="btn" name="file"></input>
+          <br>
+          <button type="submit" class="btn upload_img">Upload Image</button>
+        </form>
       </div>
 
       <div class="image">
-        <img src="{{url_for('static', filename='image/home-img.png')}}" alt="" class="home-img" />
         <img
-        src="{{url_for('static', filename='image/home-parallax-img.png')}}"
+          src="{{url_for('static', filename='image/home-img.png')}}"
+          alt=""
+          class="home-img"
+        />
+        <img
+          src="{{url_for('static', filename='image/home-parallax-img.png')}}"
           alt=""
           class="home-parallax-img"
         />
       </div>
     </section>
 
-
-
     <section class="about" id="about">
       <div class="image">
-        <img src="{{url_for('static', filename='image/about-img.png')}}" alt="" />
+        <img
+          src="{{url_for('static', filename='image/about-img.png')}}"
+          alt=""
+        />
       </div>
 
       <div class="content">
         <span>why choose us?</span>
-        <h3 class="title">what's make our food delicious!</h3>
+        <h3 class="title">Simply because we make you eat healthy!</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut
-          explicabo, numquam iusto est a ipsum assumenda tempore esse corporis?
+          In this rapid paced world, it is not at all easy to eat right, to keep track of your food. We help you do exactly the same!
         </p>
-        <a href="#" class="btn">read more</a>
+        <!-- <a href="#" class="btn">read more</a> -->
         <div class="icons-container">
           <div class="icons">
-            <img src="{{url_for('static', filename='image/serv-1.png')}}" alt="" />
-            <h3>fast delivery</h3>
+            <img
+              src="{{url_for('static', filename='image/greater-than-sign.png')}}"
+              alt=""
+            />
+            <h3>Scan your Dish</h3>
           </div>
           <div class="icons">
-            <img src="{{url_for('static', filename='image/serv-2.png')}}" alt="" />
-            <h3>fresh food</h3>
+            <img
+            src="{{url_for('static', filename='image/greater-than-sign.png')}}"
+              alt=""
+            />
+            <h3>Get nutritional Info</h3>
           </div>
           <div class="icons">
-            <img src="{{url_for('static', filename='image/serv-3.png')}}" alt="" />
-            <h3>best quality</h3>
+            <img
+              src="{{url_for('static', filename='image/greater-than-sign.png')}}"
+              alt=""
+            />
+            <h3>Eat wisely</h3>
           </div>
           <div class="icons">
-            <img src="{{url_for('static', filename='image/serv-4.png')}}" alt="" />
-            <h3>24/7 support</h3>
+            <img
+            src="{{url_for('static', filename='image/greater-than-sign.png')}}"
+              alt=""
+            />
+            <h3>24/7 Support</h3>
           </div>
         </div>
       </div>
     </section>
 
-    
-
     <section class="order" id="order">
       <div class="heading">
-        <span>order now</span>
-        <h3>fastest home delivery</h3>
+        <span>Contact Us</span>
+        <h3>Raise an issue or Share a review</h3>
       </div>
 
-      <div class="icons-container">
+      <!-- <div class="icons-container">
         <div class="icons">
-          <img src="{{url_for('static', filename='image/icon-1.png')}}" alt="" />
+          <img
+            src="{{url_for('static', filename='image/icon-1.png')}}"
+            alt=""
+          />
           <h3>7:00am to 10:30pm</h3>
         </div>
 
         <div class="icons">
-          <img src="{{url_for('static', filename='image/icon-2.png')}}" alt="" />
+          <img
+            src="{{url_for('static', filename='image/icon-2.png')}}"
+            alt=""
+          />
           <h3>+123-456-7890</h3>
         </div>
 
         <div class="icons">
-          <img src="{{url_for('static', filename='image/icon-3.png')}}" alt="" />
+          <img
+            src="{{url_for('static', filename='image/icon-3.png')}}"
+            alt=""
+          />
           <h3>mumbai, india - 400104</h3>
         </div>
-      </div>
+      </div> -->
 
       <form action="">
         <div class="flex">
@@ -136,7 +160,7 @@
           </div>
         </div>
 
-        <div class="flex">
+        <!-- <div class="flex">
           <div class="inputBox">
             <span>your order</span>
             <input type="text" placeholder="food you want" name="" id="" />
@@ -145,7 +169,7 @@
             <span>how much</span>
             <input type="number" placeholder="number or orders" name="" id="" />
           </div>
-        </div>
+        </div> -->
 
         <div class="flex">
           <div class="inputBox">
@@ -153,8 +177,8 @@
             <input type="text" placeholder="your message" name="" id="" />
           </div>
           <div class="inputBox">
-            <span>pick up time</span>
-            <input type="datetime-local" />
+            <span>Your Email</span>
+            <input type="text" placeholder="your email" name="" id="" />
           </div>
         </div>
 
@@ -175,15 +199,13 @@
               loading="lazy"
             ></iframe> -->
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5761897254215!2d73.84864491442784!3d18.45754208744571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR&#39;S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1664193644943!5m2!1sen!2sin" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.1419973458!2d73.72288002299341!3d18.5245648590998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1664214703684!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
           </div>
         </div>
 
         <input type="submit" value="proceed to order" class="btn" />
       </form>
     </section>
-
- 
 
     <section class="footer">
       <div class="newsletter">
@@ -192,45 +214,6 @@
           <input type="email" name="" placeholder="enter your email" id="" />
           <input type="submit" value="subscribe" />
         </form>
-      </div>
-
-      <div class="box-container">
-        <div class="box">
-          <h3>our menu</h3>
-          <a href="#"><i class="fas fa-arrow-right"></i> pizza</a>
-          <a href="#"><i class="fas fa-arrow-right"></i> burger</a>
-          <a href="#"><i class="fas fa-arrow-right"></i> chicken</a>
-          <a href="#"><i class="fas fa-arrow-right"></i> pasta</a>
-          <a href="#"><i class="fas fa-arrow-right"></i> and more...</a>
-        </div>
-
-        <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"> <i class="fas fa-arrow-right"></i> home</a>
-          <a href="#about"> <i class="fas fa-arrow-right"></i> about</a>
-          <a href="#popular"> <i class="fas fa-arrow-right"></i> popular</a>
-          <a href="#menu"> <i class="fas fa-arrow-right"></i> menu</a>
-          <a href="#order"> <i class="fas fa-arrow-right"></i> order</a>
-          <a href="#blogs"> <i class="fas fa-arrow-right"></i> blogs</a>
-        </div>
-
-        <div class="box">
-          <h3>extra links</h3>
-          <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
-          <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
-          <a href="#"> <i class="fas fa-arrow-right"></i> my favorite</a>
-          <a href="#"> <i class="fas fa-arrow-right"></i> terms of use</a>
-          <a href="#"> <i class="fas fa-arrow-right"></i> privary policy</a>
-        </div>
-
-        <div class="box">
-          <h3>opening hours</h3>
-          <p>monday : 7:00am to 10:00pm</p>
-          <p>tuesday : 7:00am to 10:00pm</p>
-          <p>wednesday : 7:00am to 10:00pm</p>
-          <p>friday : 7:00am to 10:00pm</p>
-          <p>saturday and sunday closed</p>
-        </div>
       </div>
 
       <div class="bottom">
@@ -243,12 +226,11 @@
         </div>
 
         <div class="credit">
-          created <span>mr. web designer</span> | all rights reserved!
+          created <span>Team Apollo</span> | all rights reserved!
         </div>
       </div>
     </section>
 
-  
-    <script src="{{url_for('static', filename='js/script.js')}}" ></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
   </body>
 </html>

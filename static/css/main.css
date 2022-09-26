@@ -1148,4 +1148,11 @@ section {
     font-size: 1.5rem;
   }
 }
+.icons img {
+  width: 10%;
+}
+
+.upload_img {
+  width: 65%;
+}
 /*# sourceMappingURL=style.css.map */
