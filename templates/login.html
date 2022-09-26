@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Food / Resturant Website Design Tutorial</title>
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+
+  </head>
+  <body>
+    
+
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-utensils"></i> Fit Foodie </a>
+
+      <nav class="navbar">
+        <a href="./home.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#popular">Contact Us</a>
+        <a href="#menu">Login</a>
+        <a href="./register.html">Register</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+    </header>
+
+   
+    <div class="login-form-container active">
+      <form action="{{ url_for('login') }}" method="post">
+        <h3>login form</h3>
+        <input
+          type="email"
+          name="email"
+          placeholder="enter your email"
+          id="email"
+          class="box"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="enter your password"
+          id="password"
+          class="box"
+        />
+
+        {{msg}}
+        <div class="remember">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+        <p>forget password? <a href="#">click here</a></p>
+        <p>
+          don't have an account?
+          <a id="register-btn" href="register">create one</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
