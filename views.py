@@ -59,7 +59,7 @@ def login():
 			print("Inside account")
 			if account['password'] == password:
 				msg = 'Logged in successfully !'
-				return render_template('home.html', msg = msg)
+				return render_template('home.html', msg = msg,email=email,account=account)
 		else:
 			msg = 'Incorrect username / password !'
 	return render_template('login.html', msg = msg)
@@ -158,5 +158,3 @@ def display_image(filename):
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-

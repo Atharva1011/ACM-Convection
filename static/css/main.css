@@ -275,6 +275,21 @@ section {
   color: #130f40;
 }
 
+.food-name {
+  text-decoration: underline;
+  margin-left: 8%;
+}
+.heading {
+  color: #27ae60;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+}
+.result {
+  float: right;
+  margin-top: -38%;
+  margin-right: 10%;
+}
 .shopping-cart-container
   .products-container
   .box-container
